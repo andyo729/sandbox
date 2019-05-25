@@ -29,5 +29,5 @@ workflows:
     jobs:
       - install
       - prettier:
-        requires:
-          - install
+          requires:
+            - install
