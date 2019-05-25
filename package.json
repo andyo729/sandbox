@@ -1,0 +1,9 @@
+{
+  "name": "sandbox",
+  "version": "0.0.0",
+  "description": "Root level sandbox project.",
+  "repository": "git@github.com:andyo729/sandbox.git",
+  "author": "Andy Orahoske <orahoske.2@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
