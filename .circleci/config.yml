@@ -1,15 +1,33 @@
 version: 2
 
 jobs:
+  prettier:
+    docker:
+      - image: node:12.3.1
+    steps:
+      - checkout
+      - restore_cache:
+        key: dependency-cache-{{ checksum "package.json" }}
+      - run: yarn prettier:check
+
   install:
     docker:
       - image: node:12.3.1
     steps:
       - checkout
+      - restore_cache:
+        key: dependency-cache-{{ checksum "package.json" }}
       - run: yarn --frozen-lockfile
+      - save_cache:
+        key: dependency-cache-{{ checksum "package.json" }}
+        paths:
+          - ./node_modules
 
 workflows:
   version: 2
   default:
     jobs:
       - install
+      - prettier
+        requires:
+          - install
