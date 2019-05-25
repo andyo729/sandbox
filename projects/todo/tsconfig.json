@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "target": "es5",
+    "lib": ["es2017", "es6", "dom", "es2017.object"],
+    "jsx": "react",
+    "rootDirs": ["src", "stories"],
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "typeRoots": ["./src/typings", "./node_modules/@types"],
+    "strictNullChecks": true
+  }
+}

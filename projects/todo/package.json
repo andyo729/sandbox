@@ -1,0 +1,12 @@
+{
+  "name": "todo",
+  "version": "0.0.0",
+  "description": "Just a sample todo app",
+  "repository": "git@github.com:andyo729/sandbox.git",
+  "author": "Andy Orahoske <orahoske.2@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsc"
+  }
+}
