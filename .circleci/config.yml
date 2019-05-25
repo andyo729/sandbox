@@ -28,6 +28,6 @@ workflows:
   default:
     jobs:
       - install
-      - prettier
+      - prettier:
         requires:
           - install
