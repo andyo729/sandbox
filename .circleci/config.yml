@@ -6,7 +6,7 @@ jobs:
       - image: node:12.3.1
     steps:
       - checkout
-      - run: echo "a first helllo"
+      - run: yarn --frozen-lockfile
 
 workflows:
   version: 2
