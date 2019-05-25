@@ -7,3 +7,9 @@ jobs:
     steps:
       - checkout
       - run: echo "a first helllo"
+
+workflows:
+  version: 2
+  default:
+    jobs:
+      - install
