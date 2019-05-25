@@ -5,5 +5,8 @@
   "repository": "git@github.com:andyo729/sandbox.git",
   "author": "Andy Orahoske <orahoske.2@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "jest": "24.8.0"
+  }
 }
