@@ -6,7 +6,12 @@
   "author": "Andy Orahoske <orahoske.2@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "prettier:check": "prettier ./**/*.ts --check",
+    "prettier:fix": "prettier ./**/*.ts --write"
+  },
   "devDependencies": {
-    "jest": "24.8.0"
+    "jest": "24.8.0",
+    "prettier": "1.17.1"
   }
 }
