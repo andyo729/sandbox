@@ -17,4 +17,5 @@ app.use(
     graphiql: true
   })
 )
-app.listen(4000)
+app.use('/healthcheck', (_, res) => res.send({ status: 'up' }))
+app.listen(80)
