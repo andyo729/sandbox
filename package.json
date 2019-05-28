@@ -8,6 +8,7 @@
   "private": true,
   "scripts": {
     "build": "lerna run build",
+    "lerna:bootstrap": "lerna bootstrap",
     "prettier:check": "prettier ./**/*.ts --check",
     "prettier:fix": "prettier ./**/*.ts --write"
   },
