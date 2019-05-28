@@ -26,6 +26,7 @@ jobs:
       - checkout
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
+      - run: yarn --frozen-lockfile
       - run: yarn lerna:bootstrap
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
